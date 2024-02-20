@@ -1,0 +1,115 @@
+:root {
+    --main-color: #596D48;
+    --light-color: #E5E7EB;
+    --focus-color: #1058bc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 1400px;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.container-img {
+    width: 500px;
+    height: 100vh;
+
+}
+
+.container-img div {
+    background-image: url(./side-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.container-forms{ 
+    margin-left: 15px;
+    width: max(600px, 500px);
+}
+
+.title-one, .title-two{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.title-one{
+    margin-top: 40px;
+}
+
+.title-two{
+    margin: 20px 0;
+}
+
+
+fieldset{
+    display: flex;
+    gap: 80px;
+    border: none;
+}
+
+legend{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+
+fieldset .input-box{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 10px 0 0 0;
+    font-size: 0.7rem;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+input:focus{
+    border: none;
+    text-decoration-color: var(--focus-color);
+}
+
+.btn-box{
+    width: 100%;
+}
+
+button{
+    margin-top: 25px;
+    padding: 13px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.log-in-box{
+    margin-top: 15px;
+    font-size: 0.8rem;
+}
+
+.log-in-link{
+    cursor: pointer;
+    color: var(--main-color);
+}

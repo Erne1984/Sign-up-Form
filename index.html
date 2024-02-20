@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -16,42 +21,70 @@
             <div class="img"></div>
         </section>
 
-        <section>
+        <section class="container-forms">
 
-            <h2>This is not a real online service! You know you need something like this in your life to help you
+            <h3 class="title-one">This is not a real online service! You know you need something like this in your life
+                to help you
                 realize your deepest dreams. Sign up now to get started.</h2>
 
-            <h2>You know you want to.</h2>
+                <h3 class="title-two">You know you want to.</h2>
 
-            <form>
-                <legend>Let´s do this!</legend>
+                    <form>
+                        <legend>Let´s do this!</legend>
 
-                <fieldset>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
+                        <fieldset>
 
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
-                </fieldset>
+                            <div class="input-box">
+                                <label for="first-name">FIRST NAME</label>
+                                <input type="text" id="first-name" name="first-name">
+                            </div>
 
-                <fieldset>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                            <div class="input-box">
+                                <label for="last-name">LAST NAME</label>
+                                <input type="text" id="last-name" name="last-name">
+                            </div>
 
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="text" id="phone" name="phone">
-                </fieldset>
+                        </fieldset>
 
-                <fieldset>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
+                        <fieldset>
 
-                    <label for="con-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="con-password" name="con-password">
-                </fieldset>
+                            <div class="input-box">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email">
+                            </div>
 
-                <button type="button">Create Account</button>
-            </form>
+                            <div class="input-box">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="text" id="phone" name="phone">
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset>
+
+                            <div class="input-box">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+
+                            <div class="input-box">
+
+                                <label for="con-password">CONFIRM PASSWORD</label>
+                                <input type="password" id="con-password" name="con-password">
+
+                            </div>
+
+                        </fieldset>
+
+                        <div class="btn-box">
+                            <button type="button">Create Account</button>
+
+                            <div class="log-in-box">
+                                <span>Already have a account?</span>
+                                <span class="log-in-link">Log in</span>
+                            </div>
+                        </div>
+                    </form>
 
         </section>
 
