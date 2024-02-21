@@ -2,6 +2,12 @@
     --main-color: #596D48;
     --light-color: #E5E7EB;
     --focus-color: #1058bc;
+    --error-color: #de0e0e;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(/fonts/Norse-Bold.otf);
 }
 
 * {
@@ -22,16 +28,50 @@ html {
 .container-img {
     width: 500px;
     height: 100vh;
-
 }
 
-.container-img div {
+.container-img .img-box {
     background-image: url(./side-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 111px;
+}
+
+.logo-box .logo{
+    height: 130px;
+    margin-top:20px;
+}
+
+.logo-box .logo-text{
+    font-family: Norse-Bold;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.footer-img-box{
+    width: 100%;
+    text-align: center;
+    justify-self: flex-end;
+}
+
+.footer-img{
+    font-size: 0.8rem;
 }
 
 .container-forms{ 
@@ -80,11 +120,11 @@ input{
     border: 1px solid black;
     border-radius: 5px;
     text-decoration: none;
+    outline: none;
 }
 
-input:focus{
-    border: none;
-    text-decoration-color: var(--focus-color);
+input:focus {
+    border: 2px solid var(--focus-color);
 }
 
 .btn-box{
